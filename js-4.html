@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 4</title>
+</head>
+
+<body>
+    <script>
+        let prom = prompt("what do you want");
+        let arr = [];
+        while (true) {
+            if (prom == "quite") {
+                break;
+            }
+            else if (prom == "list") {
+                for (let i = 0; i <= arr.length; i++) {
+                    console.log(i, arr[i]);
+                }
+                console.log("list showed");
+            }
+            else if(prom == "add"){
+                let item = prompt('add the item you want');
+                arr.push(item);
+                console.log("task added");
+            }
+            else if(prom == "delete"){
+                let item = prompt('delete the item you want');
+                arr.splice(item,1);
+                console.log("task deletex");
+            }
+            prom = prompt("what do you want");
+        }
+        
+    </script>
+</body>
+
+</html>
